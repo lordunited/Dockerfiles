@@ -5,4 +5,4 @@ RUN pip install -r requirements.txt
 COPY ./doosma /app
 WORKDIR /app
 COPY ./entrypoint_production.sh /
-ENTRYPOINT ["sh", "/entrypoint_production.sh"]
+ENTRYPOINT ["sh", "/entrypoint_awsgi.sh"]
